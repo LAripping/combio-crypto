@@ -20,3 +20,6 @@ Playong with **words** besides n-grams and how they are found. Many **colors**
 3. [https://www3.nd.edu/~busiforc/handouts/cryptography/cryptography%20hints.html]
 A set of quick and small **Tips** from the experts
 
+## Files included in this repo
+
+...are explained in the accompanying [guide](guide.txt)

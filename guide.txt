@@ -1,0 +1,13 @@
+File explanation:
+
+- file3-73415.txt.enc:  The encrypted file given
+- decrypted.txt:        The decrypted contents of the given file
+- keyfile.txt:          The keyfile in the format requested (1 ASCII code per line)
+- solution.py:          A script that demonstrates the above in a single clean run
+- monoalpha.py:         The code used to assist the statistical analysis process 
+                        with handful methods and workarounds to visualize the 
+                        unprintable characters while trying to decrypt them 
+- buildup.txt:          A screen captured depicting a part of the process followed
+                        to slowly build the 'key' and achieve a meaningful decryption
+                        ...untill it was good enough for a Google search! 
+                        (that got me there: https://en.wikipedia.org/wiki/Space_gun) 

@@ -1,0 +1,461 @@
+827d21 : 00.7 %: |||
+80046c : 00.4 %: ||
+61500c : 00.4 %: ||
+1b003d : 00.4 %: ||
+7c89f8 : 00.4 %: ||
+5a91b3 : 00.4 %: ||
+f27f6c : 00.4 %: ||
+fa968d : 00.4 %: ||
+15a91b : 00.4 %: ||
+>>> table( all_n_grams(4),15 )
+d21b3dbb : 01.2 %: ||||
+827d21b3 : 00.9 %: |||
+27d21b3d : 00.9 %: |||
+7d21b3db : 00.9 %: |||
+c827d21b : 00.9 %: |||
+c89f88bb : 00.6 %: ||
+1b003d1b : 00.6 %: ||
+68c827d2 : 00.6 %: ||
+fa968d93 : 00.6 %: ||
+f461500c : 00.6 %: ||
+f27c89f8 : 00.6 %: ||
+7c89f88b : 00.6 %: ||
+5a91b31c : 00.6 %: ||
+15a91b31 : 00.6 %: ||
+1b0e1bc8 : 00.6 %: ||
+>>> decrypt
+<function decrypt at 0x7f62201291b8>
+>>> decrypt()
+'8d9eN 11c827d21b3dbb dff00a1177 A db30e3Sa9 d227INbb 91NIbb1bD ddbbAbb1ba9 AND b2ANADA D1bf61bN3d1b 68c827d21b3dbb77 A 9118dd18 33A0e56 dbe3 IN 4d57dbS a4a49b dbSS 3dA26I9f1bc8 4615N e1Aa9 15a91bD bb27 f6Ic81b A db9aS 4846 4d57SS 269f9b 68c827d21b3dbbI261b Abb 14e3SS a44ea9 27c8 db0f7730e3S 48a44ece 4d9a77SfbS a468ce9b77 c81bA3dceIN46 AN A6827461b1b 27f6 db9aS 48a4 4ddbdbS a4I9b77 ce1bN3d1b 681bc8f627c8a4IN46 A a9159f27c89fIbbA26 a968A3d1bf626I46cebb18 df27e11b0e1bc877 A a968A3d1b 4615N ceAa9 N1b0e1bc8 9f1b1bN a9153d3d1ba9a9f615262656 15a91bD bb27 26A15N3dce AN 279fd21b3dbb INbb27 27c89fIbb 27c8 2715bb 27f6 d6Ac8bbce8fa9 46c8A0eIbbAbbI27NA26 68152626188d'
+>>> key["b2"]='C'
+>>> decrypt()
+'8d9eN 11c827d21b3dbb dff00a1177 A db30e3Sa9 d227INbb 91NIbb1bD ddbbAbb1ba9 AND CANADA D1bf61bN3d1b 68c827d21b3dbb77 A 9118dd18 33A0e56 dbe3 IN 4d57dbS a4a49b dbSS 3dA26I9f1bc8 4615N e1Aa9 15a91bD bb27 f6Ic81b A db9aS 4846 4d57SS 269f9b 68c827d21b3dbbI261b Abb 14e3SS a44ea9 27c8 db0f7730e3S 48a44ece 4d9a77SfbS a468ce9b77 c81bA3dceIN46 AN A6827461b1b 27f6 db9aS 48a4 4ddbdbS a4I9b77 ce1bN3d1b 681bc8f627c8a4IN46 A a9159f27c89fIbbA26 a968A3d1bf626I46cebb18 df27e11b0e1bc877 A a968A3d1b 4615N ceAa9 N1b0e1bc8 9f1b1bN a9153d3d1ba9a9f615262656 15a91bD bb27 26A15N3dce AN 279fd21b3dbb INbb27 27c89fIbb 27c8 2715bb 27f6 d6Ac8bbce8fa9 46c8A0eIbbAbbI27NA26 68152626188d'
+>>> key
+{'00': 'N', '31': 'D', 'cf': ' ', '88': 'I', 'b2': 'C', 'd9': 'A', 'c0': 'S'}
+>>> 
+>>> 
+>>> 
+[2]+  Stopped                 python -i monoaplha.py
+tsaou@ubuntu:~/Documents/combio (master *+) fg 1
+/usr/local/bin/vim monoaplha.py
+
+[1]+  Stopped                 /usr/local/bin/vim monoaplha.py
+tsaou@ubuntu:~/Documents/combio (master *+) 
+tsaou@ubuntu:~/Documents/combio (master *+) 
+tsaou@ubuntu:~/Documents/combio (master *+) 
+tsaou@ubuntu:~/Documents/combio (master *+) fg
+/usr/local/bin/vim monoaplha.py
+
+[1]+  Stopped                 /usr/local/bin/vim monoaplha.py
+tsaou@ubuntu:~/Documents/combio (master *+) fg 2
+python -i monoaplha.py
+
+
+>>> 
+>>> 
+>>> table(word_enders())
+c0 : 12.2 %: |||||||||
+00 : 09.5 %: |||||||
+bb : 08.1 %: ||||||
+1b : 08.1 %: ||||||
+d9 : 08.1 %: ||||||
+a9 : 08.1 %: ||||||
+77 : 06.8 %: |||||
+31 : 05.4 %: ||||
+c8 : 05.4 %: ||||
+46 : 04.1 %: |||
+>>> table(word_starters())
+d9 : 13.5 %: ||||||||||
+27 : 09.5 %: |||||||
+db : 08.1 %: ||||||
+a9 : 05.4 %: ||||
+68 : 05.4 %: ||||
+a4 : 05.4 %: ||||
+4d : 05.4 %: ||||
+48 : 04.1 %: |||
+46 : 04.1 %: |||
+ce : 02.7 %: ||
+>>> key
+{'00': 'N', '31': 'D', 'cf': ' ', '88': 'I', 'b2': 'C', 'd9': 'A', 'c0': 'S'}
+>>> decrypt()
+'8d9eN 11c827d21b3dbb dff00a1177 A db30e3Sa9 d227INbb 91NIbb1bD ddbbAbb1ba9 AND CANADA D1bf61bN3d1b 68c827d21b3dbb77 A 9118dd18 33A0e56 dbe3 IN 4d57dbS a4a49b dbSS 3dA26I9f1bc8 4615N e1Aa9 15a91bD bb27 f6Ic81b A db9aS 4846 4d57SS 269f9b 68c827d21b3dbbI261b Abb 14e3SS a44ea9 27c8 db0f7730e3S 48a44ece 4d9a77SfbS a468ce9b77 c81bA3dceIN46 AN A6827461b1b 27f6 db9aS 48a4 4ddbdbS a4I9b77 ce1bN3d1b 681bc8f627c8a4IN46 A a9159f27c89fIbbA26 a968A3d1bf626I46cebb18 df27e11b0e1bc877 A a968A3d1b 4615N ceAa9 N1b0e1bc8 9f1b1bN a9153d3d1ba9a9f615262656 15a91bD bb27 26A15N3dce AN 279fd21b3dbb INbb27 27c89fIbb 27c8 2715bb 27f6 d6Ac8bbce8fa9 46c8A0eIbbAbbI27NA26 68152626188d'
+>>> table( all_n_grams(4) )
+d21b3dbb : 01.2 %: ||||
+827d21b3 : 00.9 %: |||
+27d21b3d : 00.9 %: |||
+7d21b3db : 00.9 %: |||
+c827d21b : 00.9 %: |||
+c89f88bb : 00.6 %: ||
+1b003d1b : 00.6 %: ||
+68c827d2 : 00.6 %: ||
+fa968d93 : 00.6 %: ||
+f461500c : 00.6 %: ||
+>>> table( all_n_grams(3) )
+1b3dbb : 00.9 %: ||||
+d21b3d : 00.9 %: ||||
+21b3db : 00.9 %: ||||
+27d21b : 00.7 %: |||
+7d21b3 : 00.7 %: |||
+c827d2 : 00.7 %: |||
+827d21 : 00.7 %: |||
+80046c : 00.4 %: ||
+61500c : 00.4 %: ||
+1b003d : 00.4 %: ||
+>>> key["d2"]='T'
+>>> key["1b"]='H'
+>>> decrypt()
+'8d9eN 11c827TH3dbb dff00a1177 A db30e3Sa9 T27INbb 91NIbbHD ddbbAbbHa9 AND CANADA DHf6HN3dH 68c827TH3dbb77 A 9118dd18 33A0e56 dbe3 IN 4d57dbS a4a49b dbSS 3dA26I9fHc8 4615N e1Aa9 15a9HD bb27 f6Ic8H A db9aS 4846 4d57SS 269f9b 68c827TH3dbbI26H Abb 14e3SS a44ea9 27c8 db0f7730e3S 48a44ece 4d9a77SfbS a468ce9b77 c8HA3dceIN46 AN A682746HH 27f6 db9aS 48a4 4ddbdbS a4I9b77 ceHN3dH 68Hc8f627c8a4IN46 A a9159f27c89fIbbA26 a968A3dHf626I46cebb18 df27e1H0eHc877 A a968A3dH 4615N ceAa9 NH0eHc8 9fHHN a9153d3dHa9a9f615262656 15a9HD bb27 26A15N3dce AN 279fTH3dbb INbb27 27c89fIbb 27c8 2715bb 27f6 d6Ac8bbce8fa9 46c8A0eIbbAbbI27NA26 68152626188d'
+>>> del(key["d2"])
+>>> del(key["1b"])
+>>> key["7d"]='T'
+>>> key["21"]='H'
+>>> key
+{'00': 'N', '7d': 'T', '21': 'H', '31': 'D', 'cf': ' ', '88': 'I', 'b2': 'C', 'd9': 'A', 'c0': 'S'}
+>>> decrypt()
+'8d9eN 11c827d21b3dbb dff00a1177 A db30e3Sa9 d227INbb 91NIbb1bD ddbbAbb1ba9 AND CANADA D1bf61bN3d1b 68c827d21b3dbb77 A 9118dd18 33A0e56 dbe3 IN 4d57dbS a4a49b dbSS 3dA26I9f1bc8 4615N e1Aa9 15a91bD bb27 f6Ic81b A db9aS 4846 4d57SS 269f9b 68c827d21b3dbbI261b Abb 14e3SS a44ea9 27c8 db0f7730e3S 48a44ece 4d9a77SfbS a468ce9b77 c81bA3dceIN46 AN A6827461b1b 27f6 db9aS 48a4 4ddbdbS a4I9b77 ce1bN3d1b 681bc8f627c8a4IN46 A a9159f27c89fIbbA26 a968A3d1bf626I46cebb18 df27e11b0e1bc877 A a968A3d1b 4615N ceAa9 N1b0e1bc8 9f1b1bN a9153d3d1ba9a9f615262656 15a91bD bb27 26A15N3dce AN 279fd21b3dbb INbb27 27c89fIbb 27c8 2715bb 27f6 d6Ac8bbce8fa9 46c8A0eIbbAbbI27NA26 68152626188d'
+>>> del(key["7d"])
+>>> del(key["21"])
+>>> key["bb"]='T'
+>>> key["27"]='O'
+>>> decrypt()
+'8d9eN 11c8Od21b3dT dff00a1177 A db30e3Sa9 d2OINT 91NIT1bD ddTAT1ba9 AND CANADA D1bf61bN3d1b 68c8Od21b3dT77 A 9118dd18 33A0e56 dbe3 IN 4d57dbS a4a49b dbSS 3dA26I9f1bc8 4615N e1Aa9 15a91bD TO f6Ic81b A db9aS 4846 4d57SS 269f9b 68c8Od21b3dTI261b AT 14e3SS a44ea9 Oc8 db0f7730e3S 48a44ece 4d9a77SfbS a468ce9b77 c81bA3dceIN46 AN A68O461b1b Of6 db9aS 48a4 4ddbdbS a4I9b77 ce1bN3d1b 681bc8f6Oc8a4IN46 A a9159fOc89fITA26 a968A3d1bf626I46ceT18 dfOe11b0e1bc877 A a968A3d1b 4615N ceAa9 N1b0e1bc8 9f1b1bN a9153d3d1ba9a9f615262656 15a91bD TO 26A15N3dce AN O9fd21b3dT INTO Oc89fIT Oc8 O15T Of6 d6Ac8Tce8fa9 46c8A0eITATIONA26 68152626188d'
+>>> key["d2"]='P'
+>>> decrypt()
+'8d9eN 11c8OP1b3dT dff00a1177 A db30e3Sa9 POINT 91NIT1bD ddTAT1ba9 AND CANADA D1bf61bN3d1b 68c8OP1b3dT77 A 9118dd18 33A0e56 dbe3 IN 4d57dbS a4a49b dbSS 3dA26I9f1bc8 4615N e1Aa9 15a91bD TO f6Ic81b A db9aS 4846 4d57SS 269f9b 68c8OP1b3dTI261b AT 14e3SS a44ea9 Oc8 db0f7730e3S 48a44ece 4d9a77SfbS a468ce9b77 c81bA3dceIN46 AN A68O461b1b Of6 db9aS 48a4 4ddbdbS a4I9b77 ce1bN3d1b 681bc8f6Oc8a4IN46 A a9159fOc89fITA26 a968A3d1bf626I46ceT18 dfOe11b0e1bc877 A a968A3d1b 4615N ceAa9 N1b0e1bc8 9f1b1bN a9153d3d1ba9a9f615262656 15a91bD TO 26A15N3dce AN O9fP1b3dT INTO Oc89fIT Oc8 O15T Of6 d6Ac8Tce8fa9 46c8A0eITATIONA26 68152626188d'
+>>> key["26"]='L'
+>>> decrypt()
+'8d9eN 11c8OP1b3dT dff00a1177 A db30e3Sa9 POINT 91NIT1bD ddTAT1ba9 AND CANADA D1bf61bN3d1b 68c8OP1b3dT77 A 9118dd18 33A0e56 dbe3 IN 4d57dbS a4a49b dbSS 3dALI9f1bc8 4615N e1Aa9 15a91bD TO f6Ic81b A db9aS 4846 4d57SS L9f9b 68c8OP1b3dTIL1b AT 14e3SS a44ea9 Oc8 db0f7730e3S 48a44ece 4d9a77SfbS a468ce9b77 c81bA3dceIN46 AN A68O461b1b Of6 db9aS 48a4 4ddbdbS a4I9b77 ce1bN3d1b 681bc8f6Oc8a4IN46 A a9159fOc89fITAL a968A3d1bf6LI46ceT18 dfOe11b0e1bc877 A a968A3d1b 4615N ceAa9 N1b0e1bc8 9f1b1bN a9153d3d1ba9a9f615LL56 15a91bD TO LA15N3dce AN O9fP1b3dT INTO Oc89fIT Oc8 O15T Of6 d6Ac8Tce8fa9 46c8A0eITATIONAL 6815LL188d'
+>>> key
+{'00': 'N', '27': 'O', 'bb': 'T', '31': 'D', 'cf': ' ', '88': 'I', '26': 'L', 'b2': 'C', 'd9': 'A', 'c0': 'S', 'd2': 'P'}
+>>> 
+>>> 
+>>> table( all_n_grams(3) )
+1b3dbb : 00.9 %: ||||
+d21b3d : 00.9 %: ||||
+21b3db : 00.9 %: ||||
+27d21b : 00.7 %: |||
+7d21b3 : 00.7 %: |||
+c827d2 : 00.7 %: |||
+827d21 : 00.7 %: |||
+80046c : 00.4 %: ||
+61500c : 00.4 %: ||
+1b003d : 00.4 %: ||
+>>> table( all_n_grams(2) )
+fd9c : 00.8 %: |||||
+27c8 : 00.8 %: |||||
+8800 : 00.8 %: |||||
+3d1b : 00.8 %: |||||
+3dbb : 00.7 %: ||||
+d21b : 00.7 %: ||||
+f27c : 00.7 %: ||||
+1bc8 : 00.7 %: ||||
+88bb : 00.7 %: ||||
+d900 : 00.7 %: ||||
+>>> table( all_n_grams(1) )
+d9 : 03.9 %: |||||||||||||||||||||||||||||
+1b : 03.9 %: |||||||||||||||||||||||||||||
+bc : 03.1 %: |||||||||||||||||||||||
+fd : 03.0 %: ||||||||||||||||||||||
+00 : 02.7 %: ||||||||||||||||||||
+27 : 02.6 %: |||||||||||||||||||
+bb : 02.6 %: |||||||||||||||||||
+0c : 02.6 %: |||||||||||||||||||
+88 : 02.2 %: ||||||||||||||||
+c8 : 02.2 %: ||||||||||||||||
+>>> table( all_n_grams(4) )
+d21b3dbb : 01.2 %: ||||
+827d21b3 : 00.9 %: |||
+27d21b3d : 00.9 %: |||
+7d21b3db : 00.9 %: |||
+c827d21b : 00.9 %: |||
+c89f88bb : 00.6 %: ||
+1b003d1b : 00.6 %: ||
+68c827d2 : 00.6 %: ||
+fa968d93 : 00.6 %: ||
+f461500c : 00.6 %: ||
+>>> decrypt()
+'8d9eN 11c8OP1b3dT dff00a1177 A db30e3Sa9 POINT 91NIT1bD ddTAT1ba9 AND CANADA D1bf61bN3d1b 68c8OP1b3dT77 A 9118dd18 33A0e56 dbe3 IN 4d57dbS a4a49b dbSS 3dALI9f1bc8 4615N e1Aa9 15a91bD TO f6Ic81b A db9aS 4846 4d57SS L9f9b 68c8OP1b3dTIL1b AT 14e3SS a44ea9 Oc8 db0f7730e3S 48a44ece 4d9a77SfbS a468ce9b77 c81bA3dceIN46 AN A68O461b1b Of6 db9aS 48a4 4ddbdbS a4I9b77 ce1bN3d1b 681bc8f6Oc8a4IN46 A a9159fOc89fITAL a968A3d1bf6LI46ceT18 dfOe11b0e1bc877 A a968A3d1b 4615N ceAa9 N1b0e1bc8 9f1b1bN a9153d3d1ba9a9f615LL56 15a91bD TO LA15N3dce AN O9fP1b3dT INTO Oc89fIT Oc8 O15T Of6 d6Ac8Tce8fa9 46c8A0eITATIONAL 6815LL188d'
+>>> key["1b"]='E'
+>>> decrypt()
+'8d9eN 11c8OPE3dT dff00a1177 A db30e3Sa9 POINT 91NITED ddTATEa9 AND CANADA DEf6EN3dE 68c8OPE3dT77 A 9118dd18 33A0e56 dbe3 IN 4d57dbS a4a49b dbSS 3dALI9fEc8 4615N e1Aa9 15a9ED TO f6Ic8E A db9aS 4846 4d57SS L9f9b 68c8OPE3dTILE AT 14e3SS a44ea9 Oc8 db0f7730e3S 48a44ece 4d9a77SfbS a468ce9b77 c8EA3dceIN46 AN A68O46EE Of6 db9aS 48a4 4ddbdbS a4I9b77 ceEN3dE 68Ec8f6Oc8a4IN46 A a9159fOc89fITAL a968A3dEf6LI46ceT18 dfOe1E0eEc877 A a968A3dE 4615N ceAa9 NE0eEc8 9fEEN a9153d3dEa9a9f615LL56 15a9ED TO LA15N3dce AN O9fPE3dT INTO Oc89fIT Oc8 O15T Of6 d6Ac8Tce8fa9 46c8A0eITATIONAL 6815LL188d'
+>>> key
+{'00': 'N', '27': 'O', 'bb': 'T', '31': 'D', 'cf': ' ', '88': 'I', '26': 'L', 'b2': 'C', 'd9': 'A', '1b': 'E', 'c0': 'S', 'd2': 'P'}
+>>> key["91"]='U'
+>>> decrypt()
+'8d9eN 11c8OPE3dT dff00a1177 A db30e3Sa9 POINT UNITED ddTATEa9 AND CANADA DEf6EN3dE 68c8OPE3dT77 A U18dd18 33A0e56 dbe3 IN 4d57dbS a4a49b dbSS 3dALI9fEc8 4615N e1Aa9 15a9ED TO f6Ic8E A db9aS 4846 4d57SS L9f9b 68c8OPE3dTILE AT 14e3SS a44ea9 Oc8 db0f7730e3S 48a44ece 4d9a77SfbS a468ce9b77 c8EA3dceIN46 AN A68O46EE Of6 db9aS 48a4 4ddbdbS a4I9b77 ceEN3dE 68Ec8f6Oc8a4IN46 A a9159fOc89fITAL a968A3dEf6LI46ceT18 dfOe1E0eEc877 A a968A3dE 4615N ceAa9 NE0eEc8 9fEEN a9153d3dEa9a9f615LL56 15a9ED TO LA15N3dce AN O9fPE3dT INTO Oc89fIT Oc8 O15T Of6 d6Ac8Tce8fa9 46c8A0eITATIONAL 6815LL188d'
+>>> key["46"]='G'
+>>> decrypt()
+'8d9eN 11c8OPE3dT dff00a1177 A db30e3Sa9 POINT UNITED ddTATEa9 AND CANADA DEf6EN3dE 68c8OPE3dT77 A U18dd18 33A0e56 dbe3 IN 4d57dbS a4a49b dbSS 3dALI9fEc8 G15N e1Aa9 15a9ED TO f6Ic8E A db9aS 48G 4d57SS L9f9b 68c8OPE3dTILE AT 14e3SS a44ea9 Oc8 db0f7730e3S 48a44ece 4d9a77SfbS a468ce9b77 c8EA3dceING AN A68OGEE Of6 db9aS 48a4 4ddbdbS a4I9b77 ceEN3dE 68Ec8f6Oc8a4ING A a9159fOc89fITAL a968A3dEf6LIGceT18 dfOe1E0eEc877 A a968A3dE G15N ceAa9 NE0eEc8 9fEEN a9153d3dEa9a9f615LL56 15a9ED TO LA15N3dce AN O9fPE3dT INTO Oc89fIT Oc8 O15T Of6 d6Ac8Tce8fa9 Gc8A0eITATIONAL 6815LL188d'
+>>> key
+{'00': 'N', '27': 'O', 'bb': 'T', '46': 'G', '31': 'D', 'cf': ' ', '88': 'I', '26': 'L', 'b2': 'C', 'd9': 'A', '91': 'U', '1b': 'E', 'c0': 'S', 'd2': 'P'}
+>>> del(key["46"])
+>>> decrypt()
+'8d9eN 11c8OPE3dT dff00a1177 A db30e3Sa9 POINT UNITED ddTATEa9 AND CANADA DEf6EN3dE 68c8OPE3dT77 A U18dd18 33A0e56 dbe3 IN 4d57dbS a4a49b dbSS 3dALI9fEc8 4615N e1Aa9 15a9ED TO f6Ic8E A db9aS 4846 4d57SS L9f9b 68c8OPE3dTILE AT 14e3SS a44ea9 Oc8 db0f7730e3S 48a44ece 4d9a77SfbS a468ce9b77 c8EA3dceIN46 AN A68O46EE Of6 db9aS 48a4 4ddbdbS a4I9b77 ceEN3dE 68Ec8f6Oc8a4IN46 A a9159fOc89fITAL a968A3dEf6LI46ceT18 dfOe1E0eEc877 A a968A3dE 4615N ceAa9 NE0eEc8 9fEEN a9153d3dEa9a9f615LL56 15a9ED TO LA15N3dce AN O9fPE3dT INTO Oc89fIT Oc8 O15T Of6 d6Ac8Tce8fa9 46c8A0eITATIONAL 6815LL188d'
+>>> table(all_n_grams(3))
+1b3dbb : 00.9 %: ||||
+d21b3d : 00.9 %: ||||
+21b3db : 00.9 %: ||||
+27d21b : 00.7 %: |||
+7d21b3 : 00.7 %: |||
+c827d2 : 00.7 %: |||
+827d21 : 00.7 %: |||
+80046c : 00.4 %: ||
+61500c : 00.4 %: ||
+1b003d : 00.4 %: ||
+>>> table(all_n_grams(3), 15)
+1b3dbb : 00.9 %: ||||
+d21b3d : 00.9 %: ||||
+21b3db : 00.9 %: ||||
+27d21b : 00.7 %: |||
+7d21b3 : 00.7 %: |||
+c827d2 : 00.7 %: |||
+827d21 : 00.7 %: |||
+80046c : 00.4 %: ||
+61500c : 00.4 %: ||
+1b003d : 00.4 %: ||
+7c89f8 : 00.4 %: ||
+5a91b3 : 00.4 %: ||
+f27f6c : 00.4 %: ||
+fa968d : 00.4 %: ||
+15a91b : 00.4 %: ||
+>>> table(all_n_grams(3), 20)
+1b3dbb : 00.9 %: ||||
+d21b3d : 00.9 %: ||||
+21b3db : 00.9 %: ||||
+27d21b : 00.7 %: |||
+7d21b3 : 00.7 %: |||
+c827d2 : 00.7 %: |||
+827d21 : 00.7 %: |||
+80046c : 00.4 %: ||
+61500c : 00.4 %: ||
+1b003d : 00.4 %: ||
+7c89f8 : 00.4 %: ||
+5a91b3 : 00.4 %: ||
+f27f6c : 00.4 %: ||
+fa968d : 00.4 %: ||
+15a91b : 00.4 %: ||
+003d1b : 00.4 %: ||
+68c827 : 00.4 %: ||
+0e1bc8 : 00.4 %: ||
+b003d1 : 00.4 %: ||
+b9ac0c : 00.4 %: ||
+>>> table(all_n_grams(3), 25)
+1b3dbb : 00.9 %: ||||
+d21b3d : 00.9 %: ||||
+21b3db : 00.9 %: ||||
+27d21b : 00.7 %: |||
+7d21b3 : 00.7 %: |||
+c827d2 : 00.7 %: |||
+827d21 : 00.7 %: |||
+80046c : 00.4 %: ||
+61500c : 00.4 %: ||
+1b003d : 00.4 %: ||
+7c89f8 : 00.4 %: ||
+5a91b3 : 00.4 %: ||
+f27f6c : 00.4 %: ||
+fa968d : 00.4 %: ||
+15a91b : 00.4 %: ||
+003d1b : 00.4 %: ||
+68c827 : 00.4 %: ||
+0e1bc8 : 00.4 %: ||
+b003d1 : 00.4 %: ||
+b9ac0c : 00.4 %: ||
+8c827d : 00.4 %: ||
+68d93d : 00.4 %: ||
+a968d9 : 00.4 %: ||
+88bbd9 : 00.4 %: ||
+f46150 : 00.4 %: ||
+>>> table(all_n_grams(3), 30)
+1b3dbb : 00.9 %: ||||
+d21b3d : 00.9 %: ||||
+21b3db : 00.9 %: ||||
+27d21b : 00.7 %: |||
+7d21b3 : 00.7 %: |||
+c827d2 : 00.7 %: |||
+827d21 : 00.7 %: |||
+80046c : 00.4 %: ||
+61500c : 00.4 %: ||
+1b003d : 00.4 %: ||
+7c89f8 : 00.4 %: ||
+5a91b3 : 00.4 %: ||
+f27f6c : 00.4 %: ||
+fa968d : 00.4 %: ||
+15a91b : 00.4 %: ||
+003d1b : 00.4 %: ||
+68c827 : 00.4 %: ||
+0e1bc8 : 00.4 %: ||
+b003d1 : 00.4 %: ||
+b9ac0c : 00.4 %: ||
+8c827d : 00.4 %: ||
+68d93d : 00.4 %: ||
+a968d9 : 00.4 %: ||
+88bbd9 : 00.4 %: ||
+f46150 : 00.4 %: ||
+b0e1bc : 00.4 %: ||
+db9ac0 : 00.4 %: ||
+b3dbbc : 00.4 %: ||
+9f88bb : 00.4 %: ||
+8d93d1 : 00.4 %: ||
+>>> table(all_n_grams(3), 40)
+1b3dbb : 00.9 %: ||||
+d21b3d : 00.9 %: ||||
+21b3db : 00.9 %: ||||
+27d21b : 00.7 %: |||
+7d21b3 : 00.7 %: |||
+c827d2 : 00.7 %: |||
+827d21 : 00.7 %: |||
+80046c : 00.4 %: ||
+61500c : 00.4 %: ||
+1b003d : 00.4 %: ||
+7c89f8 : 00.4 %: ||
+5a91b3 : 00.4 %: ||
+f27f6c : 00.4 %: ||
+fa968d : 00.4 %: ||
+15a91b : 00.4 %: ||
+003d1b : 00.4 %: ||
+68c827 : 00.4 %: ||
+0e1bc8 : 00.4 %: ||
+b003d1 : 00.4 %: ||
+b9ac0c : 00.4 %: ||
+8c827d : 00.4 %: ||
+68d93d : 00.4 %: ||
+a968d9 : 00.4 %: ||
+88bbd9 : 00.4 %: ||
+f46150 : 00.4 %: ||
+b0e1bc : 00.4 %: ||
+db9ac0 : 00.4 %: ||
+b3dbbc : 00.4 %: ||
+9f88bb : 00.4 %: ||
+8d93d1 : 00.4 %: ||
+03d1bc : 00.4 %: ||
+f15a91 : 00.4 %: ||
+30e3c0 : 00.4 %: ||
+152626 : 00.4 %: ||
+8800bb : 00.4 %: ||
+f27c8c : 00.4 %: ||
+f27c89 : 00.4 %: ||
+bbd9bb : 00.4 %: ||
+880046 : 00.4 %: ||
+fbb27c : 00.4 %: ||
+>>> table(all_n_grams(3), 50)
+1b3dbb : 00.9 %: ||||
+d21b3d : 00.9 %: ||||
+21b3db : 00.9 %: ||||
+27d21b : 00.7 %: |||
+7d21b3 : 00.7 %: |||
+c827d2 : 00.7 %: |||
+827d21 : 00.7 %: |||
+80046c : 00.4 %: ||
+61500c : 00.4 %: ||
+1b003d : 00.4 %: ||
+7c89f8 : 00.4 %: ||
+5a91b3 : 00.4 %: ||
+f27f6c : 00.4 %: ||
+fa968d : 00.4 %: ||
+15a91b : 00.4 %: ||
+003d1b : 00.4 %: ||
+68c827 : 00.4 %: ||
+0e1bc8 : 00.4 %: ||
+b003d1 : 00.4 %: ||
+b9ac0c : 00.4 %: ||
+8c827d : 00.4 %: ||
+68d93d : 00.4 %: ||
+a968d9 : 00.4 %: ||
+88bbd9 : 00.4 %: ||
+f46150 : 00.4 %: ||
+b0e1bc : 00.4 %: ||
+db9ac0 : 00.4 %: ||
+b3dbbc : 00.4 %: ||
+9f88bb : 00.4 %: ||
+8d93d1 : 00.4 %: ||
+03d1bc : 00.4 %: ||
+f15a91 : 00.4 %: ||
+30e3c0 : 00.4 %: ||
+152626 : 00.4 %: ||
+8800bb : 00.4 %: ||
+f27c8c : 00.4 %: ||
+f27c89 : 00.4 %: ||
+bbd9bb : 00.4 %: ||
+880046 : 00.4 %: ||
+fbb27c : 00.4 %: ||
+1b0e1b : 00.4 %: ||
+fd900c : 00.4 %: ||
+a91b31 : 00.4 %: ||
+c89f88 : 00.4 %: ||
+27c89f : 00.4 %: ||
+968d93 : 00.4 %: ||
+f68c82 : 00.4 %: ||
+461500 : 00.4 %: ||
+d93d1b : 00.4 %: ||
+fdb9ac : 00.4 %: ||
+>>> 
+>>> 
+>>> 
+>>> key
+{'00': 'N', '27': 'O', 'bb': 'T', '31': 'D', 'cf': ' ', '88': 'I', '26': 'L', 'b2': 'C', 'd9': 'A', '91': 'U', '1b': 'E', 'c0': 'S', 'd2': 'P'}
+>>> decrypt()
+'8d9eN 11c8OPE3dT dff00a1177 A db30e3Sa9 POINT UNITED ddTATEa9 AND CANADA DEf6EN3dE 68c8OPE3dT77 A U18dd18 33A0e56 dbe3 IN 4d57dbS a4a49b dbSS 3dALI9fEc8 4615N e1Aa9 15a9ED TO f6Ic8E A db9aS 4846 4d57SS L9f9b 68c8OPE3dTILE AT 14e3SS a44ea9 Oc8 db0f7730e3S 48a44ece 4d9a77SfbS a468ce9b77 c8EA3dceIN46 AN A68O46EE Of6 db9aS 48a4 4ddbdbS a4I9b77 ceEN3dE 68Ec8f6Oc8a4IN46 A a9159fOc89fITAL a968A3dEf6LI46ceT18 dfOe1E0eEc877 A a968A3dE 4615N ceAa9 NE0eEc8 9fEEN a9153d3dEa9a9f615LL56 15a9ED TO LA15N3dce AN O9fPE3dT INTO Oc89fIT Oc8 O15T Of6 d6Ac8Tce8fa9 46c8A0eITATIONAL 6815LL188d'
+>>> key["a9"]='S'
+>>> decrypt()
+'8d9eN 11c8OPE3dT dff00a1177 A db30e3SS POINT UNITED ddTATES AND CANADA DEf6EN3dE 68c8OPE3dT77 A U18dd18 33A0e56 dbe3 IN 4d57dbS a4a49b dbSS 3dALI9fEc8 4615N e1AS 15SED TO f6Ic8E A db9aS 4846 4d57SS L9f9b 68c8OPE3dTILE AT 14e3SS a44eS Oc8 db0f7730e3S 48a44ece 4d9a77SfbS a468ce9b77 c8EA3dceIN46 AN A68O46EE Of6 db9aS 48a4 4ddbdbS a4I9b77 ceEN3dE 68Ec8f6Oc8a4IN46 A S159fOc89fITAL S68A3dEf6LI46ceT18 dfOe1E0eEc877 A S68A3dE 4615N ceAS NE0eEc8 9fEEN S153d3dESSf615LL56 15SED TO LA15N3dce AN O9fPE3dT INTO Oc89fIT Oc8 O15T Of6 d6Ac8Tce8fS 46c8A0eITATIONAL 6815LL188d'
+>>> key["c8"]='R'
+>>> decrypt()
+'8d9eN 11ROPE3dT dff00a1177 A db30e3SS POINT UNITED ddTATES AND CANADA DEf6EN3dE 68ROPE3dT77 A U18dd18 33A0e56 dbe3 IN 4d57dbS a4a49b dbSS 3dALI9fER 4615N e1AS 15SED TO f6IRE A db9aS 4846 4d57SS L9f9b 68ROPE3dTILE AT 14e3SS a44eS OR db0f7730e3S 48a44ece 4d9a77SfbS a468ce9b77 REA3dceIN46 AN A68O46EE Of6 db9aS 48a4 4ddbdbS a4I9b77 ceEN3dE 68ERf6ORa4IN46 A S159fOR9fITAL S68A3dEf6LI46ceT18 dfOe1E0eER77 A S68A3dE 4615N ceAS NE0eER 9fEEN S153d3dESSf615LL56 15SED TO LA15N3dce AN O9fPE3dT INTO OR9fIT OR O15T Of6 d6ARTce8fS 46RA0eITATIONAL 6815LL188d'
+>>> key["9f"]='B'
+>>> decrypt()
+'8d9eN 11ROPE3dT dff00a1177 A db30e3SS POINT UNITED ddTATES AND CANADA DEf6EN3dE 68ROPE3dT77 A U18dd18 33A0e56 dbe3 IN 4d57dbS a4a49b dbSS 3dALIBER 4615N e1AS 15SED TO f6IRE A db9aS 4846 4d57SS LB9b 68ROPE3dTILE AT 14e3SS a44eS OR db0f7730e3S 48a44ece 4d9a77SfbS a468ce9b77 REA3dceIN46 AN A68O46EE Of6 db9aS 48a4 4ddbdbS a4I9b77 ceEN3dE 68ERf6ORa4IN46 A S15BORBITAL S68A3dEf6LI46ceT18 dfOe1E0eER77 A S68A3dE 4615N ceAS NE0eER BEEN S153d3dESSf615LL56 15SED TO LA15N3dce AN OBPE3dT INTO ORBIT OR O15T Of6 d6ARTce8fS 46RA0eITATIONAL 6815LL188d'
+>>> key
+{'00': 'N', '27': 'O', 'bb': 'T', '31': 'D', 'cf': ' ', '9f': 'B', 'a9': 'S', '88': 'I', '26': 'L', 'b2': 'C', 'd9': 'A', '91': 'U', '1b': 'E', 'c8': 'R', 'c0': 'S', 'd2': 'P'}
+>>> del(key["c0"])
+>>> decrypt()
+'8d9eN 11ROPE3dT dff00a1177 A db30e3c0S POINT UNITED ddTATES AND CANADA DEf6EN3dE 68ROPE3dT77 A U18dd18 33A0e56 dbe3 IN 4d57dbc0 a4a49b dbc0c0 3dALIBER 4615N e1AS 15SED TO f6IRE A db9ac0 4846 4d57c0c0 LB9b 68ROPE3dTILE AT 14e3c0c0 a44eS OR db0f7730e3c0 48a44ece 4d9a77c0fbc0 a468ce9b77 REA3dceIN46 AN A68O46EE Of6 db9ac0 48a4 4ddbdbc0 a4I9b77 ceEN3dE 68ERf6ORa4IN46 A S15BORBITAL S68A3dEf6LI46ceT18 dfOe1E0eER77 A S68A3dE 4615N ceAS NE0eER BEEN S153d3dESSf615LL56 15SED TO LA15N3dce AN OBPE3dT INTO ORBIT OR O15T Of6 d6ARTce8fS 46RA0eITATIONAL 6815LL188d'
+>>> key["0e"]='V'
+>>> decrypt()
+'8d9eN 11ROPE3dT dff00a1177 A db30e3c0S POINT UNITED ddTATES AND CANADA DEf6EN3dE 68ROPE3dT77 A U18dd18 33AV56 dbe3 IN 4d57dbc0 a4a49b dbc0c0 3dALIBER 4615N e1AS 15SED TO f6IRE A db9ac0 4846 4d57c0c0 LB9b 68ROPE3dTILE AT 14e3c0c0 a44eS OR db0f7730e3c0 48a44ece 4d9a77c0fbc0 a468ce9b77 REA3dceIN46 AN A68O46EE Of6 db9ac0 48a4 4ddbdbc0 a4I9b77 ceEN3dE 68ERf6ORa4IN46 A S15BORBITAL S68A3dEf6LI46ceT18 dfOe1EVER77 A S68A3dE 4615N ceAS NEVER BEEN S153d3dESSf615LL56 15SED TO LA15N3dce AN OBPE3dT INTO ORBIT OR O15T Of6 d6ARTce8fS 46RAVITATIONAL 6815LL188d'
+>>> key["46"]='G'
+>>> decrypt()
+'8d9eN 11ROPE3dT dff00a1177 A db30e3c0S POINT UNITED ddTATES AND CANADA DEf6EN3dE 68ROPE3dT77 A U18dd18 33AV56 dbe3 IN 4d57dbc0 a4a49b dbc0c0 3dALIBER G15N e1AS 15SED TO f6IRE A db9ac0 48G 4d57c0c0 LB9b 68ROPE3dTILE AT 14e3c0c0 a44eS OR db0f7730e3c0 48a44ece 4d9a77c0fbc0 a468ce9b77 REA3dceING AN A68OGEE Of6 db9ac0 48a4 4ddbdbc0 a4I9b77 ceEN3dE 68ERf6ORa4ING A S15BORBITAL S68A3dEf6LIGceT18 dfOe1EVER77 A S68A3dE G15N ceAS NEVER BEEN S153d3dESSf615LL56 15SED TO LA15N3dce AN OBPE3dT INTO ORBIT OR O15T Of6 d6ARTce8fS GRAVITATIONAL 6815LL188d'
+>>> key["d2"]='J'
+>>> decrypt()
+'8d9eN 11ROJE3dT dff00a1177 A db30e3c0S JOINT UNITED ddTATES AND CANADA DEf6EN3dE 68ROJE3dT77 A U18dd18 33AV56 dbe3 IN 4d57dbc0 a4a49b dbc0c0 3dALIBER G15N e1AS 15SED TO f6IRE A db9ac0 48G 4d57c0c0 LB9b 68ROJE3dTILE AT 14e3c0c0 a44eS OR db0f7730e3c0 48a44ece 4d9a77c0fbc0 a468ce9b77 REA3dceING AN A68OGEE Of6 db9ac0 48a4 4ddbdbc0 a4I9b77 ceEN3dE 68ERf6ORa4ING A S15BORBITAL S68A3dEf6LIGceT18 dfOe1EVER77 A S68A3dE G15N ceAS NEVER BEEN S153d3dESSf615LL56 15SED TO LA15N3dce AN OBJE3dT INTO ORBIT OR O15T Of6 d6ARTce8fS GRAVITATIONAL 6815LL188d'
+>>> key["11"]='P'
+>>> decrypt()
+'8d9eN PROJE3dT dff00aP77 A db30e3c0S JOINT UNITED ddTATES AND CANADA DEf6EN3dE 68ROJE3dT77 A U18dd18 33AV56 dbe3 IN 4d57dbc0 a4a49b dbc0c0 3dALIBER G15N e1AS 15SED TO f6IRE A db9ac0 48G 4d57c0c0 LB9b 68ROJE3dTILE AT 14e3c0c0 a44eS OR db0f7730e3c0 48a44ece 4d9a77c0fbc0 a468ce9b77 REA3dceING AN A68OGEE Of6 db9ac0 48a4 4ddbdbc0 a4I9b77 ceEN3dE 68ERf6ORa4ING A S15BORBITAL S68A3dEf6LIGceT18 dfOe1EVER77 A S68A3dE G15N ceAS NEVER BEEN S153d3dESSf615LL56 15SED TO LA15N3dce AN OBJE3dT INTO ORBIT OR O15T Of6 d6ARTce8fS GRAVITATIONAL 6815LL188d'
+>>> key["3d"]='C'
+>>> decrypt()
+'8d9eN PROJECT dff00aP77 A db30e3c0S JOINT UNITED ddTATES AND CANADA DEf6ENCE 68ROJECT77 A U18dd18 33AV56 dbe3 IN 4d57dbc0 a4a49b dbc0c0 CALIBER G15N e1AS 15SED TO f6IRE A db9ac0 48G 4d57c0c0 LB9b 68ROJECTILE AT 14e3c0c0 a44eS OR db0f7730e3c0 48a44ece 4d9a77c0fbc0 a468ce9b77 REACceING AN A68OGEE Of6 db9ac0 48a4 4ddbdbc0 a4I9b77 ceENCE 68ERf6ORa4ING A S15BORBITAL S68ACEf6LIGceT18 dfOe1EVER77 A S68ACE G15N ceAS NEVER BEEN S15CCESSf615LL56 15SED TO LA15NCce AN OBJECT INTO ORBIT OR O15T Of6 d6ARTce8fS GRAVITATIONAL 6815LL188d'
+>>> key["68"]='P'
+>>> decrypt()
+'8d9eN PROJECT dff00aP77 A db30e3c0S JOINT UNITED ddTATES AND CANADA DEf6ENCE PROJECT77 A U18dd18 33AV56 dbe3 IN 4d57dbc0 a4a49b dbc0c0 CALIBER G15N e1AS 15SED TO f6IRE A db9ac0 48G 4d57c0c0 LB9b PROJECTILE AT 14e3c0c0 a44eS OR db0f7730e3c0 48a44ece 4d9a77c0fbc0 a4Pce9b77 REACceING AN APOGEE Of6 db9ac0 48a4 4ddbdbc0 a4I9b77 ceENCE PERf6ORa4ING A S15BORBITAL SPACEf6LIGceT18 dfOe1EVER77 A SPACE G15N ceAS NEVER BEEN S15CCESSf615LL56 15SED TO LA15NCce AN OBJECT INTO ORBIT OR O15T Of6 d6ARTce8fS GRAVITATIONAL P15LL188d'
+>>> key
+{'cf': ' ', '9f': 'B', '91': 'U', '88': 'I', 'b2': 'C', 'd9': 'A', '68': 'P', 'd2': 'J', '00': 'N', '27': 'O', '46': 'G', '1b': 'E', '3d': 'C', 'bb': 'T', '26': 'L', 'c8': 'R', 'a9': 'S', '11': 'P', '31': 'D', '0e': 'V'}
+>>> key["15"]='U'
+>>> decrypt()
+'8d9eN PROJECT dff00aP77 A db30e3c0S JOINT UNITED ddTATES AND CANADA DEf6ENCE PROJECT77 A U18dd18 33AV56 dbe3 IN 4d57dbc0 a4a49b dbc0c0 CALIBER GUN e1AS USED TO f6IRE A db9ac0 48G 4d57c0c0 LB9b PROJECTILE AT 14e3c0c0 a44eS OR db0f7730e3c0 48a44ece 4d9a77c0fbc0 a4Pce9b77 REACceING AN APOGEE Of6 db9ac0 48a4 4ddbdbc0 a4I9b77 ceENCE PERf6ORa4ING A SUBORBITAL SPACEf6LIGceT18 dfOe1EVER77 A SPACE GUN ceAS NEVER BEEN SUCCESSf6ULL56 USED TO LAUNCce AN OBJECT INTO ORBIT OR OUT Of6 d6ARTce8fS GRAVITATIONAL PULL188d'
+>>> key["f6"]='F'
+>>> decrypt()
+'8d9eN PROJECT dff00aP77 A db30e3c0S JOINT UNITED ddTATES AND CANADA DEFENCE PROJECT77 A U18dd18 33AV56 dbe3 IN 4d57dbc0 a4a49b dbc0c0 CALIBER GUN e1AS USED TO FIRE A db9ac0 48G 4d57c0c0 LB9b PROJECTILE AT 14e3c0c0 a44eS OR db0f7730e3c0 48a44ece 4d9a77c0fbc0 a4Pce9b77 REACceING AN APOGEE OF db9ac0 48a4 4ddbdbc0 a4I9b77 ceENCE PERFORa4ING A SUBORBITAL SPACEFLIGceT18 dfOe1EVER77 A SPACE GUN ceAS NEVER BEEN SUCCESSFULL56 USED TO LAUNCce AN OBJECT INTO ORBIT OR OUT OF d6ARTce8fS GRAVITATIONAL PULL188d'
+>>> key
+{'f6': 'F', 'cf': ' ', '9f': 'B', '91': 'U', '88': 'I', 'b2': 'C', 'd9': 'A', '68': 'P', 'd2': 'J', '00': 'N', '27': 'O', '46': 'G', '1b': 'E', '3d': 'C', 'bb': 'T', '26': 'L', 'c8': 'R', 'a9': 'S', '11': 'P', '15': 'U', '31': 'D', '0e': 'V'}
+>>> key["ce"]='H'
+>>> decrypt()
+'8d9eN PROJECT dff00aP77 A db30e3c0S JOINT UNITED ddTATES AND CANADA DEFENCE PROJECT77 A U18dd18 33AV56 dbe3 IN 4d57dbc0 a4a49b dbc0c0 CALIBER GUN e1AS USED TO FIRE A db9ac0 48G 4d57c0c0 LB9b PROJECTILE AT 14e3c0c0 a44eS OR db0f7730e3c0 48a44eH 4d9a77c0fbc0 a4PH9b77 REACHING AN APOGEE OF db9ac0 48a4 4ddbdbc0 a4I9b77 HENCE PERFORa4ING A SUBORBITAL SPACEFLIGHT18 dfOe1EVER77 A SPACE GUN HAS NEVER BEEN SUCCESSFULL56 USED TO LAUNCH AN OBJECT INTO ORBIT OR OUT OF d6ARTH8fS GRAVITATIONAL PULL188d'
+>>> key["56"]='Y'
+>>> decrypt()
+'8d9eN PROJECT dff00aP77 A db30e3c0S JOINT UNITED ddTATES AND CANADA DEFENCE PROJECT77 A U18dd18 33AVY dbe3 IN 4d57dbc0 a4a49b dbc0c0 CALIBER GUN e1AS USED TO FIRE A db9ac0 48G 4d57c0c0 LB9b PROJECTILE AT 14e3c0c0 a44eS OR db0f7730e3c0 48a44eH 4d9a77c0fbc0 a4PH9b77 REACHING AN APOGEE OF db9ac0 48a4 4ddbdbc0 a4I9b77 HENCE PERFORa4ING A SUBORBITAL SPACEFLIGHT18 dfOe1EVER77 A SPACE GUN HAS NEVER BEEN SUCCESSFULLY USED TO LAUNCH AN OBJECT INTO ORBIT OR OUT OF d6ARTH8fS GRAVITATIONAL PULL188d'
+>>> key["d6"]='E'
+>>> decrypt()
+'8d9eN PROJECT dff00aP77 A db30e3c0S JOINT UNITED ddTATES AND CANADA DEFENCE PROJECT77 A U18dd18 33AVY dbe3 IN 4d57dbc0 a4a49b dbc0c0 CALIBER GUN e1AS USED TO FIRE A db9ac0 48G 4d57c0c0 LB9b PROJECTILE AT 14e3c0c0 a44eS OR db0f7730e3c0 48a44eH 4d9a77c0fbc0 a4PH9b77 REACHING AN APOGEE OF db9ac0 48a4 4ddbdbc0 a4I9b77 HENCE PERFORa4ING A SUBORBITAL SPACEFLIGHT18 dfOe1EVER77 A SPACE GUN HAS NEVER BEEN SUCCESSFULLY USED TO LAUNCH AN OBJECT INTO ORBIT OR OUT OF EARTH8fS GRAVITATIONAL PULL188d'
+>>> key["dd"]='S'
+>>> decrypt()
+'8d9eN PROJECT dff00aP77 A db30e3c0S JOINT UNITED STATES AND CANADA DEFENCE PROJECT77 A U18S18 33AVY dbe3 IN 4d57dbc0 a4a49b dbc0c0 CALIBER GUN e1AS USED TO FIRE A db9ac0 48G 4d57c0c0 LB9b PROJECTILE AT 14e3c0c0 a44eS OR db0f7730e3c0 48a44eH 4d9a77c0fbc0 a4PH9b77 REACHING AN APOGEE OF db9ac0 48a4 4ddbdbc0 a4I9b77 HENCE PERFORa4ING A SUBORBITAL SPACEFLIGHT18 dfOe1EVER77 A SPACE GUN HAS NEVER BEEN SUCCESSFULLY USED TO LAUNCH AN OBJECT INTO ORBIT OR OUT OF EARTH8fS GRAVITATIONAL PULL188d'
+>>> key["a4"]='M'
+>>> decrypt()
+'8d9eN PROJECT dff00aP77 A db30e3c0S JOINT UNITED STATES AND CANADA DEFENCE PROJECT77 A U18S18 33AVY dbe3 IN 4d57dbc0 MM9b dbc0c0 CALIBER GUN e1AS USED TO FIRE A db9ac0 48G 4d57c0c0 LB9b PROJECTILE AT 14e3c0c0 M4eS OR db0f7730e3c0 48M4eH 4d9a77c0fbc0 MPH9b77 REACHING AN APOGEE OF db9ac0 48M 4ddbdbc0 MI9b77 HENCE PERFORMING A SUBORBITAL SPACEFLIGHT18 dfOe1EVER77 A SPACE GUN HAS NEVER BEEN SUCCESSFULLY USED TO LAUNCH AN OBJECT INTO ORBIT OR OUT OF EARTH8fS GRAVITATIONAL PULL188d'
+>>> key["8f"]="'"
+>>> decrypt()
+"8d9eN PROJECT dff00aP77 A db30e3c0S JOINT UNITED STATES AND CANADA DEFENCE PROJECT77 A U18S18 33AVY dbe3 IN 4d57dbc0 MM9b dbc0c0 CALIBER GUN e1AS USED TO FIRE A db9ac0 48G 4d57c0c0 LB9b PROJECTILE AT 14e3c0c0 M4eS OR db0f7730e3c0 48M4eH 4d9a77c0fbc0 MPH9b77 REACHING AN APOGEE OF db9ac0 48M 4ddbdbc0 MI9b77 HENCE PERFORMING A SUBORBITAL SPACEFLIGHT18 dfOe1EVER77 A SPACE GUN HAS NEVER BEEN SUCCESSFULLY USED TO LAUNCH AN OBJECT INTO ORBIT OR OUT OF EARTH'S GRAVITATIONAL PULL188d"
+>>> key["77"]=','
+>>> decrypt()
+"8d9eN PROJECT dff00aP, A db30e3c0S JOINT UNITED STATES AND CANADA DEFENCE PROJECT, A U18S18 33AVY dbe3 IN 4d57dbc0 MM9b dbc0c0 CALIBER GUN e1AS USED TO FIRE A db9ac0 48G 4d57c0c0 LB9b PROJECTILE AT 14e3c0c0 M4eS OR db0f,30e3c0 48M4eH 4d9a,c0fbc0 MPH9b, REACHING AN APOGEE OF db9ac0 48M 4ddbdbc0 MI9b, HENCE PERFORMING A SUBORBITAL SPACEFLIGHT18 dfOe1EVER, A SPACE GUN HAS NEVER BEEN SUCCESSFULLY USED TO LAUNCH AN OBJECT INTO ORBIT OR OUT OF EARTH'S GRAVITATIONAL PULL188d"
+
